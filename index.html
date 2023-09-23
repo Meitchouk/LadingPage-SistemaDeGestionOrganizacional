@@ -1,144 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Landing Page - Sistema de Gestión Organizacional</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <!-- Enlaza tu archivo CSS aquí -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- jQuery para el carrusel -->
-    </head>
-    <body>
-        <header class="header">
-            <h1>Sistema de Gestión Organizacional</h1>
-            <h2>Centro de Salud Roberto Herrera Ríos</h2>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Sistema de Gestión Organizacional</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Sistema de Gestión Organizacional</h1>
+        <h2>Centro de Salud Roberto Herrera Ríos</h2>
+        
+        <!-- Botón de traducción a español (ES) -->
+        <button id="translate-es">ES</button>
+        
+        <!-- Botón de traducción a inglés (EN) -->
+        <button id="translate-en">EN</button>
+    </header>
 
-        <nav class="navigation">
-            <ul>
-                <li><a href="#carousel">Carrusel</a></li>
-                <li><a href="#generalidades">Generalidades</a></li>
-                <li><a href="#figura-rica">Figura Rica</a></li>
-                <li><a href="#descripcion">Descripción</a></li>
-            </ul>
-        </nav>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#carousel">Carrusel</a></li>
+            <li><a href="#generalidades">Generalidades</a></li>
+            <li><a href="#figura-rica">Figura Rica</a></li>
+            <li><a href="#descripcion">Descripción</a></li>
+        </ul>
+    </nav>
 
-        <main>
-            <section id="carousel" class="section">
-                <h1 class="section-title">Carrusel</h1>
-                <div class="carousel-container">
-                    <div class="carousel">
-                        <div class="slide">
-                            <img
-                                src="img/[Falta de Coordinación y Comunicación].png"
-                                alt="Imagen 1">
-                        </div>
-                        <div class="slide">
-                            <img
-                                src="img/[Falta de Coordinación y Comunicación].png"
-                                alt="Imagen 2">
-                        </div>
-                        <div class="slide">
-                            <img
-                                src="img/[Falta de Coordinación y Comunicación].png"
-                                alt="Imagen 3">
-                        </div>
-                        <!-- Puedes agregar más imágenes aquí -->
+    <main>
+        <section id="carousel" class="section">
+            <h1 class="section-title">Carrusel</h1>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="slide">
+                        <img src="img/[Falta de Coordinación y Comunicación].png" alt="Imagen 1">
                     </div>
-                    <div class="carousel-controls">
-                        <button id="prev-slide" class="carousel-button">Anterior</button>
-                        <button id="next-slide" class="carousel-button">Siguiente</button>
+                    <div class="slide">
+                        <img src="img/[Falta de Coordinación y Comunicación].png" alt="Imagen 2">
                     </div>
-                </div>
-            </section>
-
-            <section id="generalidades" class="section">
-                <h1 class="section-title">Generalidades del Centro de Salud
-                    Roberto Herrera Ríos (Distrito 1)</h1>
-                <div class="generalidades-info">
-                    <p><strong>CENTRO DE SALUD</strong></p>
-                    <p><strong>SILAIS - MANAGUA</strong></p>
-                    <p><strong>Región/departamento - Managua</strong></p>
-                    <p><strong>Municipio - Managua</strong></p>
-                    <p><strong>Distrito - (Distrito 1)</strong></p>
-                    <p><strong>Localidad - De Transnica, 2c. al Lago, Reparto
-                            Serrato, Reparto Serrano</strong></p>
-                    <!-- Mapa de Google Maps con el marcador en la ubicación del Centro de Salud -->
-                    <div class="google-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.9336142072048!2d-86.2676584364255!3d12.136591666159623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7155e2c89bc919%3A0x7e0b6367392f40c6!2sCentro%20De%20Salud%20Roberto%20Herrera%20Rios!5e0!3m2!1ses-419!2sni!4v1695500071966!5m2!1ses-419!2sni" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="slide">
+                        <img src="img/[Falta de Coordinación y Comunicación].png" alt="Imagen 3">
                     </div>
-                    <p><strong>Zona - Urbano</strong></p>
+                    <!-- Puedes agregar más imágenes aquí -->
                 </div>
-            </section>
-
-            <section id="figura-rica" class="section">
-                <h1 class="section-title">Figura Rica</h1>
-                <div class="figura-rica-container">
-                    <img src="img/FiguraRica.png" alt="Figura Rica">
+                <div class="carousel-controls">
+                    <button id="prev-slide" class="carousel-button">Anterior</button>
+                    <button id="next-slide" class="carousel-button">Siguiente</button>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="descripcion" class="section">
-                <h1 class="section-title">Descripción del Proyecto</h1>
-                <p>Aquí puedes escribir una breve descripción de tu proyecto y
-                    el sistema de gestión organizacional implementado en el
-                    Centro de Salud Roberto Herrera Ríos.</p>
-            </section>
-        </main>
+        <section id="generalidades" class="section">
+            <h1 class="section-title">Generalidades del Centro de Salud
+                Roberto Herrera Ríos (Distrito 1)</h1>
+            <div class="generalidades-info">
+                <p><strong>CENTRO DE SALUD</strong></p>
+                <p><strong>SILAIS - MANAGUA</strong></p>
+                <p><strong>Región/departamento - Managua</strong></p>
+                <p><strong>Municipio - Managua</strong></p>
+                <p><strong>Distrito - (Distrito 1)</strong></p>
+                <p><strong>Localidad - De Transnica, 2c. al Lago, Reparto
+                        Serrato, Reparto Serrano</strong></p>
+                <!-- Mapa de Google Maps con el marcador en la ubicación del Centro de Salud -->
+                <div class="google-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.2076115044455!2d-86.2690777844371!3d12.136599110179969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f69e714f30a2dbf%3A0xd8696d915f7b47b4!2sCentro%20de%20Salud%20Roberto%20Herrera%20R%C3%ADos%20(Distrito%201)!5e0!3m2!1ses-419!2sni!4v1632731982296!5m2!1ses-419!2sni&markers=12.136599110179969,-86.26724074290804"
+                        width="600" height="450" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                <p><strong>Zona - Urbano</strong></p>
+            </div>
+        </section>
 
-        <footer>
-            <p>&copy; 2023 Tu Nombre</p>
-        </footer>
+        <section id="figura-rica" class="section">
+            <h1 class="section-title">Figura Rica</h1>
+            <div class="figura-rica-container">
+                <img src="img/FiguraRica.png" alt="Figura Rica">
+            </div>
+        </section>
 
-        <a href="#header" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        <section id="descripcion" class="section">
+            <h1 class="section-title">Descripción del Proyecto</h1>
+            <p>Aquí puedes escribir una breve descripción de tu proyecto y
+                el sistema de gestión organizacional implementado en el
+                Centro de Salud Roberto Herrera Ríos.</p>
+        </section>
+    </main>
 
-        <!-- Agrega el enlace a Font Awesome (icono de flecha hacia arriba) en el encabezado de tu HTML -->
-        <script src="https://kit.fontawesome.com/a076d05399.js"
-            crossorigin="anonymous"></script>
+    <footer>
+        <p>&copy; 2023 Tu Nombre</p>
+    </footer>
 
-        <script>
-        $(document).ready(function () {
-            // Carrusel
-            const $carousel = $(".carousel");
-            const $prevSlide = $("#prev-slide");
-            const $nextSlide = $("#next-slide");
-            let currentIndex = 0;
+    <a href="#header" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
-            function showSlide(index) {
-                $carousel.css("transform", `translateX(-${index * 100}%)`);
-            }
+    <!-- Agrega el enlace a Font Awesome (icono de flecha hacia arriba) en el encabezado de tu HTML -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"
+        crossorigin="anonymous"></script>
 
-            $prevSlide.click(function () {
-                if (currentIndex > 0) {
-                    currentIndex--;
-                    showSlide(currentIndex);
-                }
-            });
-
-            $nextSlide.click(function () {
-                if (currentIndex < $carousel.children().length - 1) {
-                    currentIndex++;
-                    showSlide(currentIndex);
-                }
-            });
-
-            // Botón "Volver Arriba"
-            const $backToTop = $(".back-to-top");
-
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) {
-                    $backToTop.fadeIn();
-                } else {
-                    $backToTop.fadeOut();
-                }
-            });
-
-            $backToTop.click(function () {
-                $("html, body").animate({ scrollTop: 0 }, 500);
-                return false;
-            });
-        });
-    </script>
-    </body>
+    <!-- Agrega el archivo JavaScript para la traducción -->
+    <script src="js/translate.js"></script>
+</body>
 </html>

@@ -163,3 +163,25 @@ a:hover {
     height: 450px; /* Altura deseada del mapa */
     border: none;
 }
+
+/* Estilos para el botón de traducción */
+.translation-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Estilos para ocultar el botón que no corresponde al idioma actual */
+#translate-en[lang="es"] {
+    display: none;
+}
+
+#translate-es[lang="en"] {
+    display: none;
+}
