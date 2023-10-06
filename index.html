@@ -1,103 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Sistema de Gestión Organizacional</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header class="header">
-        <h1>Sistema de Gestión Organizacional</h1>
-        <h2>Centro de Salud Roberto Herrera Ríos</h2>
-        
-        <!-- Botón de traducción a español (ES) -->
-        <button id="translate-es">ES</button>
-        
-        <!-- Botón de traducción a inglés (EN) -->
-        <button id="translate-en">EN</button>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page - Sistema de Gestión Organizacional</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0-beta3/css/all.min.css"
+            integrity="sha384-..." crossorigin="anonymous">
+        <script src="js/backtotop.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="js/navigation.js"></script>
+        <script src="js/carouselTitle.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Sistema de Gestión Organizacional</h1>
+            <h2>Centro de Salud Roberto Herrera Ríos</h2>
 
-    <nav class="navigation">
-        <ul>
-            <li><a href="#carousel">Carrusel</a></li>
-            <li><a href="#generalidades">Generalidades</a></li>
-            <li><a href="#figura-rica">Figura Rica</a></li>
-            <li><a href="#descripcion">Descripción</a></li>
-        </ul>
-    </nav>
+        </header>
 
-    <main>
-        <section id="carousel" class="section">
-            <h1 class="section-title">Carrusel</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a class="nav-link" href="#carousel">Carrusel</a></li>
+                <li><a class="nav-link" href="#generalidades">Generalidades</a></li>
+                <li><a class="nav-link" href="#figura-rica">Figura Rica</a></li>
+                <li><a class="nav-link" href="#descripcion">Descripción</a></li>
+            </ul>
+        </nav>
+        
+        
+
+        <main>
             <div class="carousel-container">
+                <h3 id="carousel-title"></h3>
                 <div class="carousel">
-                    <div class="slide">
-                        <img src="img/[Falta de Coordinación y Comunicación].png" alt="Imagen 1">
-                    </div>
-                    <div class="slide">
-                        <img src="img/[Falta de Coordinación y Comunicación].png" alt="Imagen 2">
-                    </div>
-                    <div class="slide">
-                        <img src="img/[Falta de Coordinación y Comunicación].png" alt="Imagen 3">
-                    </div>
-                    <!-- Puedes agregar más imágenes aquí -->
+                    <!-- Las imágenes se cargarán aquí dinámicamente con JavaScript -->
                 </div>
                 <div class="carousel-controls">
                     <button id="prev-slide" class="carousel-button">Anterior</button>
                     <button id="next-slide" class="carousel-button">Siguiente</button>
                 </div>
             </div>
-        </section>
-
-        <section id="generalidades" class="section">
-            <h1 class="section-title">Generalidades del Centro de Salud
-                Roberto Herrera Ríos (Distrito 1)</h1>
-            <div class="generalidades-info">
-                <p><strong>CENTRO DE SALUD</strong></p>
-                <p><strong>SILAIS - MANAGUA</strong></p>
-                <p><strong>Región/departamento - Managua</strong></p>
-                <p><strong>Municipio - Managua</strong></p>
-                <p><strong>Distrito - (Distrito 1)</strong></p>
-                <p><strong>Localidad - De Transnica, 2c. al Lago, Reparto
-                        Serrato, Reparto Serrano</strong></p>
-                <!-- Mapa de Google Maps con el marcador en la ubicación del Centro de Salud -->
-                <div class="google-map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.2076115044455!2d-86.2690777844371!3d12.136599110179969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f69e714f30a2dbf%3A0xd8696d915f7b47b4!2sCentro%20de%20Salud%20Roberto%20Herrera%20R%C3%ADos%20(Distrito%201)!5e0!3m2!1ses-419!2sni!4v1632731982296!5m2!1ses-419!2sni&markers=12.136599110179969,-86.26724074290804"
-                        width="600" height="450" frameborder="0"
-                        allowfullscreen></iframe>
+            
+            <section id="generalidades" class="section">
+                <h1 class="section-title">Generalidades del Centro de Salud
+                    Roberto Herrera Ríos (Distrito 1)</h1>
+                <div class="generalidades-info">
+                    <p><strong>CENTRO DE SALUD</strong></p>
+                    <p><strong>SILAIS - MANAGUA</strong></p>
+                    <p><strong>Región/departamento - Managua</strong></p>
+                    <p><strong>Municipio - Managua</strong></p>
+                    <p><strong>Distrito - (Distrito 1)</strong></p>
+                    <p><strong>Localidad - De Transnica, 2c. al Lago, Reparto
+                            Serrato, Reparto Serrano</strong></p>
+                    <!-- Mapa de Google Maps con el marcador en la ubicación del Centro de Salud -->
+                    <div class="google-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.6429112371334!2d-86.26982782493745!3d12.136567088107274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7155e2c89bc919%3A0x7e0b6367392f40c6!2sCentro%20De%20Salud%20Roberto%20Herrera%20Rios!5e0!3m2!1ses-419!2sni!4v1696576807567!5m2!1ses-419!2sni" width="600" height="450" style="border-color: black;"border: 2px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p><strong>Zona - Urbano</strong></p>
                 </div>
-                <p><strong>Zona - Urbano</strong></p>
-            </div>
-        </section>
+            </section>
 
-        <section id="figura-rica" class="section">
-            <h1 class="section-title">Figura Rica</h1>
-            <div class="figura-rica-container">
-                <img src="img/FiguraRica.png" alt="Figura Rica">
-            </div>
-        </section>
+            <section id="figura-rica" class="section">
+                <h1 class="section-title">Figura Rica</h1>
+                <div class="figura-rica-container">
+                    <img src="img/FiguraRica/FiguraRica.png" alt="Figura Rica">
+                </div>
+            </section>
 
-        <section id="descripcion" class="section">
-            <h1 class="section-title">Descripción del Proyecto</h1>
-            <p>Aquí puedes escribir una breve descripción de tu proyecto y
-                el sistema de gestión organizacional implementado en el
-                Centro de Salud Roberto Herrera Ríos.</p>
-        </section>
-    </main>
+            <section id="descripcion" class="section">
+                <h1 class="section-title">Descripción del Proyecto</h1>
+                <p>Aquí puedes escribir una breve descripción de tu proyecto y
+                    el sistema de gestión organizacional implementado en el
+                    Centro de Salud Roberto Herrera Ríos.</p>
+            </section>
+        </main>
 
-    <footer>
-        <p>&copy; 2023 Tu Nombre</p>
-    </footer>
+        <footer>
+            <p>Todos los derechos reservados &copy; 2023 Marat Joseph Lanza Meitchouk, Ethan Jahir Dávila Larios, Hans Nehemías Potosme y Rodrigo Antonio Matutes Cabrera</p>
+            <p>Sistema de Gestión Organizacional || Centro de Salud Roberto Herrera Ríos || Universidad Nacional de Ingeniería (UNI NI)</p>
+        </footer> 
 
-    <a href="#header" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        <!-- Botón "Volver Arriba" -->
+        <a href="#header" class="back-to-top" id="back-to-top-button">↑</a>
 
-    <!-- Agrega el enlace a Font Awesome (icono de flecha hacia arriba) en el encabezado de tu HTML -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"
-        crossorigin="anonymous"></script>
-
-    <!-- Agrega el archivo JavaScript para la traducción -->
-    <script src="js/translate.js"></script>
-</body>
+        <!-- Agrega el archivo JavaScript para la traducción -->
+        <script src="js/translate.js"></script>
+    </body>
 </html>
