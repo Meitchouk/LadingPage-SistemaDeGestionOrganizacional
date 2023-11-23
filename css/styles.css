@@ -273,3 +273,26 @@ a:hover {
         display: block; /* Muestra el icono del menú */
     }
 }
+
+/* styles.css */
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.carousel-button {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.carousel-button.right {
+    margin-right: -10px; /* Ajusta este valor según sea necesario */
+}

@@ -1,91 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Landing Page - Sistema de Gestión Organizacional</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0-beta3/css/all.min.css"
-            integrity="sha384-..." crossorigin="anonymous">
-        <script src="js/backtotop.js"></script>
-        <script src="js/carousel.js"></script>
-        <script src="js/navigation.js"></script>
-        <script src="js/carouselTitle.js"></script>
-    </head>
-    <body>
-        <header class="header">
-            <h1>Sistema de Gestión Organizacional</h1>
-            <h2>Centro de Salud Roberto Herrera Ríos</h2>
 
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Sistema de Gestión Organizacional</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0-beta3/css/all.min.css"
+        integrity="sha384-..." crossorigin="anonymous">
+    <script src="js/backtotop.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/carouselTitle.js"></script>
+</head>
 
-        <nav class="navigation">
-            <ul>
-                <li><a class="nav-link" href="#carousel">Carrusel</a></li>
-                <li><a class="nav-link" href="#generalidades">Generalidades</a></li>
-                <li><a class="nav-link" href="#figura-rica">Figura Rica</a></li>
-                <li><a class="nav-link" href="#descripcion">Descripción</a></li>
-            </ul>
-        </nav>
-        
-        
+<body>
+    <header class="header">
+        <h1>Sistema de gestión organizacional del centro de salud Roberto Herrera Ríos </h1>
+        <h2>ubicado en el distrito 1 del municipio de Managua, durante el segundo semestre del 2023</h2>
 
-        <main>
-            <div class="carousel-container">
-                <h3 id="carousel-title"></h3>
-                <div class="carousel">
-                    <!-- Las imágenes se cargarán aquí dinámicamente con JavaScript -->
-                </div>
-                <div class="carousel-controls">
-                    <button id="prev-slide" class="carousel-button">Anterior</button>
-                    <button id="next-slide" class="carousel-button">Siguiente</button>
-                </div>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a class="nav-link" href="#carousel">Carrusel</a></li>
+            <li><a class="nav-link" href="#generalidades">Generalidades</a></li>
+            <li><a class="nav-link" href="#figura-rica">Figura Rica</a></li>
+            <li><a class="nav-link" href="#resumen">Resumen</a></li>
+            <li><a class="nav-link" href="#introduccion">Introducción</a></li>
+            <li><a class="nav-link" href="#objetivos">Objetivos</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+        <div class="carousel-container" onmouseover="showButtons()" onmouseout="hideButtons()">
+            <h3 id="carousel-title"></h3>
+            <div class="carousel">
+                <!-- Las imágenes se cargarán aquí dinámicamente con JavaScript -->
             </div>
-            
-            <section id="generalidades" class="section">
-                <h1 class="section-title">Generalidades del Centro de Salud
-                    Roberto Herrera Ríos (Distrito 1)</h1>
-                <div class="generalidades-info">
-                    <p><strong>CENTRO DE SALUD</strong></p>
-                    <p><strong>SILAIS - MANAGUA</strong></p>
-                    <p><strong>Región/departamento - Managua</strong></p>
-                    <p><strong>Municipio - Managua</strong></p>
-                    <p><strong>Distrito - (Distrito 1)</strong></p>
-                    <p><strong>Localidad - De Transnica, 2c. al Lago, Reparto
-                            Serrato, Reparto Serrano</strong></p>
-                    <!-- Mapa de Google Maps con el marcador en la ubicación del Centro de Salud -->
-                    <div class="google-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.6429112371334!2d-86.26982782493745!3d12.136567088107274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7155e2c89bc919%3A0x7e0b6367392f40c6!2sCentro%20De%20Salud%20Roberto%20Herrera%20Rios!5e0!3m2!1ses-419!2sni!4v1696576807567!5m2!1ses-419!2sni" width="600" height="450" style="border-color: black;"border: 2px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <p><strong>Zona - Urbano</strong></p>
+            <div class="carousel-buttons">
+                <button class="carousel-button" id="prevButton" onclick="prevSlide()">←</button>
+                <button class="carousel-button" id="nextButton" onclick="nextSlide()">→</button>
+            </div>
+        </div>
+
+        <section id="generalidades" class="section">
+            <h1 class="section-title">Generalidades del Centro de Salud
+                Roberto Herrera Ríos (Distrito 1)</h1>
+            <div class="generalidades-info">
+                <ul>
+                    <li><p>CENTRO DE SALUD</p></li>
+                    <li><p>SILAIS - MANAGUA</p></li>
+                    <li><p>Región/departamento - Managua</p></li>
+                    <li><p>Municipio - Managua</p></li>
+                    <li><p>Distrito - (Distrito 1)</p></li>
+                    <li><p>Localidad - De Transnica, 2c. al Lago, Reparto Serrato, Reparto Serrano</p></li>
+                    <li><p>Zona - Urbano</p></li>
+                </ul>
+                <!-- Mapa de Google Maps con el marcador en la ubicación del Centro de Salud -->
+                <div class="google-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.6429112371334!2d-86.26982782493745!3d12.136567088107274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7155e2c89bc919%3A0x7e0b6367392f40c6!2sCentro%20De%20Salud%20Roberto%20Herrera%20Rios!5e0!3m2!1ses-419!2sni!4v1696576807567!5m2!1ses-419!2sni"
+                        width="600" height="450" style="border-color: black;" border: 2px;;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </section>
 
-            <section id="figura-rica" class="section">
-                <h1 class="section-title">Figura Rica</h1>
-                <div class="figura-rica-container">
-                    <img src="img/FiguraRica/FiguraRica.png" alt="Figura Rica">
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="descripcion" class="section">
-                <h1 class="section-title">Descripción del Proyecto</h1>
-                <p>Aquí puedes escribir una breve descripción de tu proyecto y
-                    el sistema de gestión organizacional implementado en el
-                    Centro de Salud Roberto Herrera Ríos.</p>
-            </section>
-        </main>
+        <section id="figura-rica" class="section">
+            <h1 class="section-title">Figura Rica</h1>
+            <div class="figura-rica-container">
+                <img src="img/FiguraRica/FiguraRica.png" alt="Figura Rica">
+            </div>
+        </section>
 
-        <footer>
-            <p>Todos los derechos reservados &copy; 2023 Marat Joseph Lanza Meitchouk, Ethan Jahir Dávila Larios, Hans Nehemías Potosme y Rodrigo Antonio Matutes Cabrera</p>
-            <p>Sistema de Gestión Organizacional || Centro de Salud Roberto Herrera Ríos || Universidad Nacional de Ingeniería (UNI NI)</p>
-        </footer> 
+        <section id="resumen" class="section">
+            <h1 class="section-title">Resumen del Proyecto</h1>
+            <p align="center" style="line-height: 1.5em;">
+                El proyecto "Sistema de gestión organizacional del Centro de Salud Roberto Herrera Ríos" surge para
+                abordar desafíos en la eficiencia y calidad de atención médica, así como en la gestión de expedientes
+                clínicos. Se identifican áreas críticas, como la gestión de expedientes y los tiempos de espera en
+                consultas y procedimientos médicos. Utilizando herramientas como el diagrama de contexto y análisis de
+                caja negra, se desglosa el sistema existente. La investigación se enfoca en determinar problemas y
+                comprender la interacción de elementos mediante herramientas visuales.
+                <br><br>
+                Los objetivos del proyecto se definen con tiempos y precedentes, considerando conexiones entre ellos. Se
+                detallan las consecuencias positivas de cada objetivo para determinar el sistema óptimo (S.O).
+                <br><br>
+                Se exploran alternativas de solución y consecuencias negativas en el capítulo III. Se determina el
+                sistema óptimo y la ruta crítica a través de herramientas como el árbol de problemas y objetivos, matriz
+                de optimización y representación gráfica de la ruta crítica.
+                <br><br>
+                El proyecto aspira a transformar el Centro de Salud en un referente de eficiencia y calidad, mediante la
+                adaptación de un sistema de gestión organizacional innovador. Se espera un aumento en eficiencia,
+                calidad de atención, agilidad de gestiones y una disminución significativa en la carga administrativa
+                para los empleados. En resumen, el proyecto busca mejorar la operatividad y calidad del Centro de Salud,
+                implementando un sistema que optimice procesos y beneficie tanto a pacientes como al personal médico y
+                administrativo.
+            </p>
+        </section>
 
-        <!-- Botón "Volver Arriba" -->
-        <a href="#header" class="back-to-top" id="back-to-top-button">↑</a>
+        <section id="introduccion" class="section">
+            <h1 class="section-title">Introducción del Proyecto</h1>
+            <p align="center" style="line-height: 1.5em;">El Centro de Salud Roberto Herrera Ríos, ubicado en el
+                distrito 1 de Managua, representa un destacado
+                referente en la provisión de atención médica en nuestra comunidad. Aunque relativamente nuevo en
+                comparación con otros centros de salud en la capital, se ha ganado una sólida reputación por brindar
+                servicios médicos de alta calidad y contar con un equipo de profesionales médicos altamente capacitados.
+                Este centro de salud se ha esforzado por satisfacer las necesidades de salud de la población local,
+                ofreciendo una variedad de servicios médicos y estableciendo un compromiso constante con la mejora
+                continua. La siguiente presentación se enfoca en los esfuerzos llevados a cabo para abordar y superar
+                desafíos previamente identificados en el Centro de Salud Roberto Herrera Ríos.
+                <br><br>
+                En este contexto, el presente trabajo de investigación se enfoca en analizar y abordar desafíos
+                previamente identificados en el Centro de Salud Roberto Herrera Ríos. Para ello, se ha estructurado en
+                tres capítulos clave:
+                <br><br>
+                En el primer capítulo se profundizará en la identificación y análisis de los desafíos y obstáculos que
+                actualmente enfrenta la organización. Se examinarán los factores que han impactado en su funcionamiento
+                y se determinarán las áreas que requieren mejoras.
+                <br><br>
+                En el segundo capítulo se describirán los objetivos propuestos para abordar los problemas identificados
+                en el capítulo anterior. Se destacarán las posibles consecuencias positivas que la implementación de un
+                nuevo sistema organizacional puede tener para el Centro de Salud, así como para la comunidad a la que
+                sirve.
+                <br><br>
+                En el tercer capítulo se presentarán diversas alternativas de solución para superar los desafíos
+                identificados. Se analizarán detalladamente las implicaciones y posibles consecuencias negativas que
+                podrían surgir como resultado de la implementación de cada alternativa, permitiendo una evaluación
+                exhaustiva de las opciones disponibles.
+                <br><br>
+                Este trabajo de investigación busca arrojar luz sobre los esfuerzos y la determinación del Centro de
+                Salud Roberto Herrera Ríos para afrontar sus desafíos y continuar brindando servicios de salud de
+                calidad a la comunidad. A lo largo de los siguientes capítulos, exploraremos a fondo cada aspecto de
+                este proceso, con la esperanza de contribuir a un futuro más saludable y próspero para quienes dependen
+                de esta institución médica.
+            </p>
+        </section>
 
-        <!-- Agrega el archivo JavaScript para la traducción -->
-        <script src="js/translate.js"></script>
-    </body>
+        <section id="objetivos" class="section">
+            <h1 class="section-title">Objetivos del Proyecto</h1>
+            <h2>Objetivo General</h2>
+            <ul>
+                <li style="line-height: 1.5em;">
+                    Elaborar un sistema de gestión organizacional para el centro de salud Roberto Herrera Ríos ubicado
+                    en el distrito 1 del municipio de Managua
+                </li>
+            </ul>
+            <h2>OBjetivos específicos</h2>
+            <ul>
+                <li style="line-height: 1.5em;">Realizar un análisis exhaustivo de la problemática que presenta el
+                    centro de salud Roberto Herrera Ríos.</li>
+                <li style="line-height: 1.5em;">Definir claramente los objetivos a alcanzar con la implementación de un
+                    nuevo sistema organizacional, identificando las posibles consecuencias positivas de esta
+                    implementación.</li>
+                <li style="line-height: 1.5em;">Establecer diferentes alternativas de solución a los desafíos
+                    identificados, destacando las posibles consecuencias negativas de cada alternativa.</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados &copy; 2023 Marat Joseph Lanza Meitchouk, Ethan Jahir Dávila Larios, Hans
+            Nehemías Potosme y Rodrigo Antonio Matutes Cabrera</p>
+        <p>Sistema de Gestión Organizacional || Centro de Salud Roberto Herrera Ríos || Universidad Nacional de
+            Ingeniería (UNI NI)</p>
+    </footer>
+
+    <!-- Botón "Volver Arriba" -->
+    <a href="#header" class="back-to-top" id="back-to-top-button">↑</a>
+
+</body>
+
 </html>
